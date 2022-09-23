@@ -231,6 +231,7 @@ class splitbase():
         :param extent: the image format
         :return:
         """
+        print(os.path.join(self.imagepath, name + extent))
         img = cv2.imread(os.path.join(self.imagepath, name + extent))
         if np.shape(img) == ():
             return
